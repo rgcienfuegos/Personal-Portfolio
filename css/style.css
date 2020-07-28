@@ -1,7 +1,7 @@
 /* Custom properties/variables  */
 :root {
     --main-white: #f0f0f0;
-    --main-red: #a7091e;
+    --main-red: #096da7;
     --main-turquesa: #47c4f5;
     --main-blue: #45567d;
     --main-gray: #303841;
@@ -114,9 +114,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%;   
     background: var(--main-red);
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.733);
+    box-shadow: 0 0.3rem 0 rgba(0, 0, 0, 0.733);
     z-index: 10;
   }
   
@@ -173,12 +173,26 @@
     text-align: center;
     padding: 10rem 2rem;
     background: var(--main-blue);
+    border-top: 0.3rem solid var(--main-red);
   }
   
+
+  .projects-section2 {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: var(--main-blue);
+    border-top: 0.3rem solid var(--main-red);
+  }
+
+
+
+
+
   .projects-section-header {
     max-width: 640px;
     margin: 0 auto 6rem auto;
     border-bottom: 0.2rem solid var(--main-white);
+   
   }
   
   @media (max-width: 28.75em) {
@@ -212,12 +226,10 @@
     background: var(--main-gray);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
+   
   }
   
-  .projects2 {
-    
-    border-top: 4px solid var(--main-red);
-  }
+
 
 
   .code {
@@ -238,8 +250,13 @@
   .project-title {
     font-size: 2rem;
     padding: 2rem 0.5rem;
+    
   }
   
+
+
+
+
   .btn {
     display: inline-block;
     padding: 1rem 2rem;
@@ -275,9 +292,10 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     padding: 0 2rem;
     background: var(--main-gray);
+    border-top: 0.3rem solid var(--main-red);
   }
   
   .contact-section-header > h2 {
@@ -320,8 +338,9 @@
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
+    height: 10vh;
     background: var(--main-gray);
-    border-top: 4px solid var(--main-red);
+    border-top: 0.5rem solid var(--main-red);
   }
   
   footer > p {
