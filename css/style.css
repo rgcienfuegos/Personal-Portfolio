@@ -48,7 +48,7 @@
   @font-face {
 
     font-family: 'Pricedown' ;
-    src: url('./resources/pricedown_bl.ttf') format('truetype');
+    src: url('.\resources\pricedown_bl.ttf') format('truetype');
  
  }
   /* 1200px / 16px = 75em */
