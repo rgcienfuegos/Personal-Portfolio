@@ -367,7 +367,11 @@
 
 
     }
-
+    .projects-section {
+     
+      height:auto;
+   
+    }
   }
 
 @media (max-width: 28.75em) {
@@ -375,9 +379,13 @@
 
     .projects-section-header {
       font-size: 4rem;
-
-
     }
+    .projects-section {
+     
+      height:auto;
+   
+    }
+
 }
   
   /* "Automagic" image grid using no media queries */
