@@ -367,29 +367,11 @@
 
 
     }
-    .projects-section {
-      margin-top:50rem; ;
-   
-    }
-    
-  
-    .projects-section2 {
-      margin-top:50rem; ;
-  
-    }
+
   }
 
 @media (max-width: 28.75em) {
-  .projects-section {
-  margin-top: 50rem;
- 
-  }
-  
 
-  .projects-section2 {
-    margin-top: 50rem;;
-
-  }
 
     .projects-section-header {
       font-size: 4rem;
