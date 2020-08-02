@@ -274,6 +274,7 @@
   .welcome-section p {
     font-size: 2rem;
     font-weight: 200;
+   
     font-style: italic;
     color: var(--main-blue);
   }
