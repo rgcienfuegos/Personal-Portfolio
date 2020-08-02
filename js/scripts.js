@@ -12,22 +12,26 @@ async function getRepos() {
     let counter = 0;
 
     result.forEach(i => {
-if(!i.name.includes("rgcienfuegos") ){
+if(!i.name.includes("rgcienfuegos")&&!i.fork&&!i.private){
     
     counter = counter + 1;
 
     let repoHTML = `
      <h2 id='nameRepo` + counter + `'></h2>
      <p id='descRepo` + counter + `'></p>
-     <p>
-       <a id='butRepoDet` + counter + `' class="btn btn-secondary" href="#" role="button">Mas info&raquo;</a>
-       <a id='butRepoDem` + counter + `' class="btn btn-secondary" href="https://rgcienfuegos.github.io/` + i.name + `//" role="button">Link demo &raquo;</a>
+     <img class="project-image"
+     src="img/` + i.name + `.PNG"
+     alt="project" />
+     <p class="project-title">
+       <a id='butRepoDem` + counter + `' class="btn " href="https://rgcienfuegos.github.io/` + i.name + `//" role="button">Link &raquo;</a>
      </p>
      `
+ 
+     
          let div = document.createElement("div");
 
     div.innerHTML = repoHTML;
-    div.className = "col-md-4";
+    div.className = "project";
 
     divResult.appendChild(div)
     let nameRepo = document.getElementById("nameRepo" + counter);
@@ -43,13 +47,13 @@ if(!i.name.includes("rgcienfuegos") ){
 
 // ---------Responsive-navbar-active-animation-----------
 function test(){
-    var tabsNewAnim = $('#navbarSupportedContent');
-    var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
-    var activeItemNewAnim = tabsNewAnim.find('.active');
-    var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
-    var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
-    var itemPosNewAnimTop = activeItemNewAnim.position();
-    var itemPosNewAnimLeft = activeItemNewAnim.position();
+    let tabsNewAnim = $('#navbarSupportedContent');
+    let selectorNewAnim = $('#navbarSupportedContent').find('li').length;
+    let activeItemNewAnim = tabsNewAnim.find('.active');
+    let activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
+    let activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
+    let itemPosNewAnimTop = activeItemNewAnim.position();
+    let itemPosNewAnimLeft = activeItemNewAnim.position();
 
 
 
@@ -65,10 +69,10 @@ function test(){
     $("#navbarSupportedContent").on("click","li",function(e){
       $('#navbarSupportedContent ul li').removeClass("active");
       $(this).addClass('active');
-      var activeWidthNewAnimHeight = $(this).innerHeight();
-      var activeWidthNewAnimWidth = $(this).innerWidth();
-      var itemPosNewAnimTop = $(this).position();
-      var itemPosNewAnimLeft = $(this).position();
+      let activeWidthNewAnimHeight = $(this).innerHeight();
+      let activeWidthNewAnimWidth = $(this).innerWidth();
+      let itemPosNewAnimTop = $(this).position();
+      let itemPosNewAnimLeft = $(this).position();
       
       $(".hori-selector").css({
         "top":itemPosNewAnimTop.top + "px", 
@@ -80,6 +84,7 @@ function test(){
   }
   $(document).ready(function(){
     setTimeout(function(){ test(); });
+    getRepos() ;
   });
   $(window).on('resize', function(){
     setTimeout(function(){ test(); }, 500);
