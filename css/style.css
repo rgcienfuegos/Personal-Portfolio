@@ -367,11 +367,7 @@
 
 
     }
-    .projects-section {
-     
-      height:auto;
-   
-    }
+
   }
 
 @media (max-width: 28.75em) {
@@ -380,11 +376,7 @@
     .projects-section-header {
       font-size: 4rem;
     }
-    .projects-section {
-     
-      height:auto;
-   
-    }
+ 
 
 }
   
@@ -400,10 +392,10 @@
   }
   
   @media (max-width: 30.625em) {
-    .projects-section {
+  /*  .projects-section {
       padding: 6rem 1rem;
 
-    }
+    }*/
   
     .projects-grid {
       grid-template-columns: 1fr;
