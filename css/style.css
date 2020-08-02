@@ -67,7 +67,7 @@
   /* 460px / 16px = 28.75em */
   @media (max-width: 28.75em) {
     html {
-      font-size: 55%;
+      font-size: 35%;
     }
     }
   
@@ -284,6 +284,7 @@
        .navigationwelcome{          
         grid-area: navigationwelcome;
         align-content: end;
+        font-size: 80%;
       }
       .welcome-section p {
         font-size: 80%;
@@ -299,6 +300,12 @@
     .navigationwelcome{          
       grid-area: navigationwelcome;
       align-content: end;
+      font-size: 80%;
+    }
+
+    .welcome-section p {
+      font-size: 80%;
+     
     }
 }
   /* Projects section */
