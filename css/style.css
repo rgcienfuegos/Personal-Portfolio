@@ -313,13 +313,17 @@
        .navigationwelcome{          
         grid-area: navigationwelcome;
         align-content: end;
-        font-size: 80%;
+       
+      }
+      h1,h2{          
+        font-size: 250%;
+       
       }
       .welcome-section p {
         font-size: 80%;
        
       }
- 
+     
   }
 
 @media (max-width: 28.75em) {
@@ -329,9 +333,14 @@
     .navigationwelcome{          
       grid-area: navigationwelcome;
       align-content: end;
-      font-size: 80%;
+     
     }
 
+    h1,h2{          
+      font-size: 250%;
+     
+    }
+  
     .welcome-section p {
       font-size: 80%;
      
