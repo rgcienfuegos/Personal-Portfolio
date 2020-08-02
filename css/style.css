@@ -34,6 +34,13 @@
     scroll-behavior: smooth;
   }
   
+@font-face {
+  font-family: 'PricedownBl-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PricedownBl-Regular'), url('pricedown bl.woff') format('woff');
+  }
+
   /* A few media query to set some font sizes at different screen sizes.
    * This helps automate a bit of responsiveness.
    * The trick is to use the rem unit for size values, margin and padding.
@@ -83,7 +90,7 @@
   h1,
   h2 {
   
-    font-family: 'Eater', cursive;
+    font-family: 'Poppins', sans-serif;
 
     font-weight: 500;
     text-align: center;
@@ -259,7 +266,8 @@
 
 
   .welcome-section h1 {
-    font-family: 'Eater', cursive;
+    font-family: 'PricedownBl-Regular';
+
        margin-bottom: 10rem;
   }
   
@@ -480,7 +488,7 @@
   
   .contact-section-header > h2 {
     font-size: 6rem;
-    font-family: 'Eater', cursive;
+    font-family: 'PricedownBl-Regular';
   }
   
   @media (max-width: 28.75em) {
