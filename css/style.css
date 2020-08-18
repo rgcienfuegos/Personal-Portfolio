@@ -261,7 +261,7 @@
     width: 100%;
     height: 100vh;
     background: var(--main-gray);
-   /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);*/
+ 
   }
 
 
@@ -409,10 +409,7 @@
   }
   
   @media (max-width: 30.625em) {
-  /*  .projects-section {
-      padding: 6rem 1rem;
 
-    }*/
   
     .projects-grid {
       grid-template-columns: 1fr;
