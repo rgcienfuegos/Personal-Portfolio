@@ -12,14 +12,12 @@ async function getRepos() {
   let counter = 0;
 
   result.forEach(i => {
-    if (!i.name.includes("rgcienfuegos") && !i.fork && !i.private) {
+    if (!i.name.includes("rgcienfuegos")&& i.description && !i.description.includes("freeCodeCamp")  && !i.fork && !i.private) {
       counter = counter + 1;
       let repoHTML = `
      <h2 id='nameRepo` + counter + `'></h2>
      <p id='descRepo` + counter + `'></p>
-     <img class="project-image"
-     src="img/` + i.name + `.PNG"
-     alt="project" />
+    
      <p class="project-title">
        <a id='butRepoDem` + counter + `' class="btn " href="https://rgcienfuegos.github.io/` + i.name + `//" role="button">Link &raquo;</a>
      </p>
