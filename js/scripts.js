@@ -34,8 +34,6 @@ async function getRepos() {
       let desRepo = document.getElementById("descRepo" + counter);
       desRepo.textContent = i.description;
     }
-
-
   })
 }
 
